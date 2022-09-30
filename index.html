@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="left">
+        <div>
+            <div id="front" class="card">
+                <span id="dot"><img src="favicon.png" alt="dot"></span>
+                <span id="O">O</span>
+                <span id="cardno">0000 0000 0000 0000</span>
+                <p>Mujtaba Tahir</p>
+                <span class="carddate">00/00/00</span>
+            </div>
+            <div id="back" class="card">
+                <span>000</span>
+            </div>
+        </div>
+        </div>
+        
+        <div class="right">
+            <form action="">
+                <div class="info">
+                <label for="name">CARDHOLDER NAME</label>
+                <input type="text" id="name" class="userdata" value="e.g.Mujtaba Tahir">
+            </div>
+                <div class="info">
+                <label for="name">CARD NUMBER</label>
+                <input type="text" id="accNo" class="userdata" value="e.g.1234 5678 9123 0000">
+            </div>
+                <div class="info " id="datedata">
+                <label id="exp">EXP.DATE(MM/DD/YY)</label>
+                <label for="cvc"id="cvclabel" >CVC</label>
+                <input type="date" class="monyea" value="MM/DD/Y">
+                <input type="tel" value="e.g.123" id="cvc">
+            </div>
+            <input type="submit" value="Confirm" id="conf">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

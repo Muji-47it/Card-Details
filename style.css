@@ -1,0 +1,148 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(203, 202, 202);
+}
+#container
+{
+    display: grid;
+    background-color: white;
+    grid-template-columns:.9fr 2fr;
+    
+}
+.left
+{
+    display: inline-grid;
+    height: 738px;
+    background-image: url(bg-main-desktop.png);
+}
+.card
+{
+    width: 440px;
+    height: 230px;
+    border-radius: .4em;
+    position: relative;
+    top: 5em;
+    left:10em;
+}
+#front
+{
+    background-image: url(bg-card-front.png);
+}
+#dot
+{
+    position: relative;
+    top:1em;
+    left: .8em;
+}
+#O
+{
+    position: relative;
+    top:.5em;
+    left: .6em;
+    font-size: 1.5em;
+}
+#cardno
+{
+    position: relative;
+    top: 3.5em;
+    font-size: 2em
+}
+#front p
+{
+    position: relative;
+    top:9em;
+    left:3.5em;
+    display: inline-block;
+}
+.carddate
+{
+    position: relative;
+    top:9em;
+    float: right;
+    right: 2em;
+}
+#back
+{
+    position: relative;
+    top:6em;
+    left:18em;
+    background-image: url(bg-card-back.png);
+    color: white;
+}
+#back span{
+    position: relative;
+    top:6.8em;
+    float: right;
+    right: 3em;
+}
+.right
+{
+    display: inline-grid;
+    font-size: .6em;
+}
+.right form
+{
+    place-self: center;
+}
+.info
+{
+    margin-top: 1.5em;
+}
+.info label
+{
+    place-self: center;
+    display: block;
+    color: gray;
+}
+.userdata
+{
+    margin-top: .4em;
+    width: 15vw;
+    border-radius: .3em;
+    height: 4vh;
+    padding: 1em;
+}
+#datedata
+{
+    display: inline-grid;
+    grid-template-columns: 120px 140px;
+}
+.monyea
+{
+    width: 7vw;
+    height: 3.5vh;
+    margin-top: .4em;
+    border-radius: .3em;
+    padding: .5em;
+}
+#exp
+{
+    justify-self: start;
+}
+#cvclabel
+{
+    justify-self: start;
+}
+#cvc
+{
+    width: 7vw;
+    height: 3.5vh;
+    margin-top: .4em;
+    border-radius: .3em;
+    padding: .3em;
+}
+#conf
+{
+    display: block;
+    width: 15vw;
+    padding: 1em;
+    color: white;
+    margin-top: 1.5em;
+    background-color: rgb(2, 27, 76);
+    border-radius: .5em;
+}
