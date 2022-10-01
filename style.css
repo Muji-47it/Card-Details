@@ -11,7 +11,7 @@
 {
     display: grid;
     background-color: white;
-    grid-template-columns:.9fr 2fr;
+    grid-template-columns:.8fr 2fr;
     
 }
 .left
@@ -27,7 +27,7 @@
     border-radius: .4em;
     position: relative;
     top: 5em;
-    left:10em;
+    left:6em;
 }
 #front
 {
@@ -36,8 +36,8 @@
 #dot
 {
     position: relative;
-    top:1em;
-    left: .8em;
+    top: 1em;
+    left: 1em;
 }
 #O
 {
@@ -70,7 +70,7 @@
 {
     position: relative;
     top:6em;
-    left:18em;
+    left:11em;
     background-image: url(bg-card-back.png);
     color: white;
 }
@@ -145,4 +145,104 @@
     margin-top: 1.5em;
     background-color: rgb(2, 27, 76);
     border-radius: .5em;
+}
+@media screen and (max-width:400px) {
+    #container
+    {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+    .up
+    {
+        height: 30vh;
+        width: 100vw;
+    }
+    #back
+{
+    position: absolute;
+    left: 3.2em;
+    top: 2em;
+    background-image: url(bg-card-back.png);
+    background-size: 79vw;
+    background-repeat: no-repeat;
+    color: white;
+}
+#back span{
+    position: relative;
+    float: left;
+    top:4.3em;
+    left: 14em;
+}
+#front
+{
+    position:relative;
+    top:9em;
+    left: 1em;
+    background-repeat: no-repeat;
+    background-size: 79vw;
+    background-image: url(bg-card-front.png);
+    z-index: 1;
+}
+#cardno
+{
+    position: relative;
+    top: 3.5em;
+    font-size: 1.2em
+}
+#front p
+{
+    position: absolute;
+    top:7em;
+    display: inline-block;
+}
+.carddate
+{
+    position: absolute;
+    float: left;
+    top:7em;
+    right: 11em;
+}
+.down form
+{
+    position: absolute;
+    place-self: end;
+    top: 50em;
+    right: 5em;
+}
+.userdata
+{
+    width: 50vw;
+}
+#datedata
+{
+    display: inline-grid;
+    grid-template-columns: 120px 120px;
+}
+.monyea
+{
+    width: 27vw;
+    height: 3.5vh;
+    margin-top: .4em;
+    border-radius: .3em;
+    padding: .5em;
+}
+#cvc
+{
+    width: 25vw;
+    height: 3.5vh;
+    margin-top: .4em;
+    border-radius: .3em;
+    padding: .3em;
+}
+#conf
+{
+    display: block;
+    width: 60vw;
+    padding: 1em;
+    color: white;
+    margin-top: 1.5em;
+    background-color: rgb(2, 27, 76);
+    border-radius: .5em;
+}
+
 }
