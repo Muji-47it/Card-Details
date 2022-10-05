@@ -15,34 +15,58 @@
                 <span id="dot"><img src="favicon.png" alt="dot"></span>
                 <span id="O">O</span>
                 <span id="cardno">0000 0000 0000 0000</span>
-                <p>Mujtaba Tahir</p>
-                <span class="carddate">00/00/00</span>
+                <p id="frontp">Card Holder</p>
+                <span class="carddate">00</span>
             </div>
             <div id="back" class="card">
-                <span>000</span>
+                <span id="backspan">000</span>
             </div>
         </div>
         </div>
         
         <div class="right down">
-            <form action="">
+            <form action="#">
                 <div class="info">
                 <label for="name">CARDHOLDER NAME</label>
-                <input type="text" id="name" class="userdata" value="e.g.Mujtaba Tahir">
+                <input type="text" id="name" class="userdata" placeholder="e.g.Mujtaba Tahir" onclick="this.value=''" minlength="15">
             </div>
                 <div class="info">
                 <label for="accNo">CARD NUMBER</label>
-                <input type="text" id="accNo" class="userdata" value="e.g.1234 5678 9123 0000">
+                <input type="text" id="accNo" class="userdata" placeholder="e.g.1234 5678 9123 0000" onclick="this.value=''">
             </div>
                 <div class="info " id="datedata">
                 <label id="exp">EXP.DATE(MM/DD/YY)</label>
                 <label for="cvc"id="cvclabel" >CVC</label>
-                <input type="date" class="monyea" value="MM/DD/Y">
-                <input type="tel" value="e.g.123" id="cvc">
+                <input type="month" class="monyea" placeholder="MM/DD/Y" onclick="this.value=''">
+                <input type="tel" placeholder="e.g.123" id="cvc" onclick="this.value=''">
             </div>
-            <input type="submit" value="Confirm" id="conf">
+            <button id="conf">Confirm</button>
             </form>
         </div>
     </div>
+    <script>
+        
+        let cardnumber=document.getElementById('cardno');
+        let incardno=document.getElementById('accNo');
+
+        let cardname=document.getElementById('frontp');
+        let incardname=document.getElementById('name')
+        
+        let carddate=document.getElementsByClassName('carddate');
+        let incarddate=document.getElementById('name');
+
+        let cardcvc=document.getElementById('backspan')
+        let incardcvc=document.getElementById('cvc')
+
+        let button=document.getElementById('conf');
+        function get()
+        {
+            cardname.innerHTML=incardname.value;
+            cardnumber.innerHTML=incardno.value;
+            carddate.innerHTML=incarddate.value;
+            cardcvc.innerHTML=incardcvc.value;
+        }
+        button.addEventListener('click',get)
+    </script>
 </body>
 </html>
