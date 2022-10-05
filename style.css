@@ -22,7 +22,7 @@
 }
 .card
 {
-    width: 335px;
+    width: 440px;
     height: 230px;
     border-radius: .4em;
     position: relative;
@@ -48,21 +48,23 @@
 }
 #cardno
 {
+    display: block;
     position: relative;
-    top: 3.5em;
-    font-size: 2em
+    top: 2.2em;
+    font-size: 2em;
+    left: 2em;
 }
 #front p
 {
     position: relative;
-    top:9em;
+    top:7em;
     left:3.5em;
     display: inline-block;
 }
 .carddate
 {
     position: relative;
-    top:9em;
+    top:7em;
     float: right;
     right: 2em;
 }
@@ -111,6 +113,7 @@
 {
     display: inline-grid;
     grid-template-columns: 120px 140px;
+    column-gap: 2em;
 }
 .monyea
 {
@@ -147,88 +150,103 @@
     border-radius: .5em;
 }
 @media screen and (max-width:500px) {
+
     #container
     {
-        display: grid;
-        grid-template-rows: 1fr 2fr;
+        display: inline-block;
     }
     .up
     {
-        height: 30vh;
-        width: 100vw;
+        width: 500px;
+        height: 300px;
     }
     .card
     {
-        width:335px;
+        max-width: 400px;
     }
     #back
 {
     position: absolute;
-    left: 3.2em;
-    top: 2em;
+    left: 10vw;
     background-image: url(bg-card-back.png);
-    background-size: 79vw;
+    background-size:300px;
     background-repeat: no-repeat;
-    color: white;
 }
 #back span{
     position: relative;
-    float: left;
-    top:4.3em;
-    left: 14em;
+    top:4.5em;left: -8em;
 }
 #front
 {
-    position:relative;
-    top:9em;
-    left: 1em;
-    background-repeat: no-repeat;
-    background-size: 79vw;
     background-image: url(bg-card-front.png);
-    z-index: 1;
+    background-size:300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 22vh;
+    left: 5vw;z-index: 1;
+
+}
+#dot
+{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+#O
+{
+    position: absolute;
+    top:.7em;
+    left: 2em;
+    font-size: 1.5em;
 }
 #cardno
 {
     position: relative;
-    top: 3.5em;
-    font-size: 1.2em
+    top: 3em;
+    font-size: 1.3em
 }
 #front p
 {
     position: absolute;
-    top:7em;
+    top:7.5em;
+    left:2.5em;
     display: inline-block;
 }
 .carddate
 {
-    position: absolute;
+    position: relative;
+    top:7.5em;
+    left: 13em;
     float: left;
-    top:7em;
-    right: 11em;
 }
-.down form
+.right form
 {
-    position: absolute;
-    place-self: end;
-    top: 50em;
-    right: 5em;
+    height: 30vh;
+    display: inline-grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    position: relative;
+    top: 10vh;
+    left: 10vw;
 }
 .userdata
 {
-    width: 50vw;
-}
-#datedata
-{
-    display: inline-grid;
-    grid-template-columns: 120px 120px;
+    margin-top: .4em;
+    width: 65vw;
+    border-radius: .3em;
+    height: 4vh;
+    padding: 1em;
 }
 .monyea
 {
-    width: 27vw;
+    width: 27.5vw;
     height: 3.5vh;
     margin-top: .4em;
     border-radius: .3em;
     padding: .5em;
+}
+#cvclabel
+{
+    justify-self: start;
 }
 #cvc
 {
@@ -241,12 +259,11 @@
 #conf
 {
     display: block;
-    width: 60vw;
+    width: 80vw;
     padding: 1em;
     color: white;
     margin-top: 1.5em;
     background-color: rgb(2, 27, 76);
     border-radius: .5em;
 }
-
 }
